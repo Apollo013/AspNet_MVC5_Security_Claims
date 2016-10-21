@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
+using System.Diagnostics;
+using System.Security.Claims;
 using System.Web.Mvc;
 
 namespace ClaimsTransformation.Controllers
@@ -10,6 +9,22 @@ namespace ClaimsTransformation.Controllers
     {
         public ActionResult Index()
         {
+            // Access the current user property
+            ClaimsPrincipal claimsPrincipal = User as ClaimsPrincipal;
+            if (claimsPrincipal != null)
+            {
+                ClaimsIdentity claimsIdentity = claimsPrincipal.Identity as ClaimsIdentity;
+                Debug.WriteLine($"Authenticated: {claimsIdentity.IsAuthenticated}");
+
+                // Get list of claims
+                IEnumerable<Claim> claimsCollection = claimsIdentity.Claims;
+
+                foreach (var claim in claimsCollection)
+                {
+                    Debug.WriteLine($"Claim Type: {claim.Type},\t Value Type: {claim.ValueType},\t Claim Value: {claim.Value}");
+                }
+            }
+
             return View();
         }
 
