@@ -1,4 +1,6 @@
-﻿using Microsoft.Owin;
+﻿using ClaimsTransformation.ClaimsTransformation;
+using ClaimsTransformation.Middleware;
+using Microsoft.Owin;
 using Owin;
 
 [assembly: OwinStartupAttribute(typeof(ClaimsTransformation.Startup))]
@@ -9,6 +11,7 @@ namespace ClaimsTransformation
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            app.UseClaimsTransformationComponent(new ClaimsTransformationService()); // Poor mans Dependency Injection
         }
     }
 }
