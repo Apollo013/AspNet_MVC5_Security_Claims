@@ -21,7 +21,7 @@ This is an MVC5 app that demonstrates how to transform the initial collectopn of
 
 The transformation is carried out using the 'ClaimsTransformationService' class.
 
-This is called by the 'ClaimsTransformationComponent' class which is hooked up to OWIN via the extension class 'AppBuilderExtensions'.
+This is called by the 'ClaimsTransformationComponent' class which is hooked up to our OWIN middleware via the extension class 'AppBuilderExtensions'.
 
 The 'HomeController' contains code that will ultimatley print out the transformed collection of claims to the Debug 'Output' window.
 
