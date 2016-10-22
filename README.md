@@ -42,7 +42,7 @@ Again, not covered in this repository, but we have previously covered creating o
 
 ### Custom Claims Attribute using 'AuthorizationFilterAttribute'
 
-We have previously covered creating one [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer/Identity/Attributes/ClaimsAuthorizationAttribute.cs). This attribute only permits access if the user has the 'FTE' claim (Full Time Employee) with a value of 1. This attribute is applied at the 'Action' level [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.Core/Controllers/OrdersController.cs). This was set using the claims factory mentioned above.
+We have previously covered creating one [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer/Identity/Attributes/ClaimsAuthorizationAttribute.cs). This attribute only permits access if the user has the 'FTE' claim (Full Time Employee) with a value of 1. This attribute is applied at the 'Action' level [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.Core/Controllers/OrdersController.cs). This claim was set using the claims factory mentioned above.
 
 ---
 
