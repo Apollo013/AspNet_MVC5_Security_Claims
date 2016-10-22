@@ -44,6 +44,12 @@ We have previously covered creating one [Here](https://github.com/Apollo013/AspN
 
 ---
 
+### Unpacking Claims
+
+[Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.Core/Controllers/ClaimsController.cs) we can unpack all the claims for a user within a controller action and return them to a view.
+
+---
+
 ###Resources
 |Title|Author|Website|
 |-----|------|-------|
