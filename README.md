@@ -6,7 +6,7 @@
 
 Developed with Visual Studio 2015 Community
 
-To run, launch the app using F5 and register a new user. Navigate to the Home page and in Visual Studio, observer the output window in debug console.
+To run, launch the app using F5 and register a new user. Navigate to the Home page and then in Visual Studio, observe the output window in debug console.
 
 ---
 
