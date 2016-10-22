@@ -28,7 +28,7 @@ The 'HomeController' contains code that will ultimatley print out the transforme
 ---
 
 ###Claims Factory
-Although not covered in this repository, we have previoudly covered it [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer/Identity/Claims/ApplicationClaimsFactory.cs) in the ['AspNet_WebApi2_Security_JWTAuthentication'](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication) project.
+Although not covered in this repository, we have previously covered it [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer/Identity/Claims/ApplicationClaimsFactory.cs) in the ['AspNet_WebApi2_Security_JWTAuthentication'](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication) project.
 
 ---
 
