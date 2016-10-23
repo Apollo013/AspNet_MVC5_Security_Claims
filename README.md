@@ -14,6 +14,7 @@ To run, launch the app using F5 and register a new user. Navigate to the Home pa
 |Tech|
 |----|
 |C#|
+|MVC5|
 
 ---
 
@@ -21,15 +22,16 @@ To run, launch the app using F5 and register a new user. Navigate to the Home pa
 
 The 'ClaimsTransformation' project is an MVC5 app that demonstrates how to transform the initial collectopn of default claims produced by the system, to include claims that we actually want.
 
-The transformation is carried out using the 'ClaimsTransformationService' class.
+The transformation is carried out using the ['ClaimsTransformationService'](https://github.com/Apollo013/AspNet_MVC5_Security_Claims/blob/master/ClaimsTransformation/ClaimsTransformation/ClaimsTransformationService.cs) class.
 
-This is called by the 'ClaimsTransformationComponent' class which is hooked up to our OWIN middleware via the extension class 'AppBuilderExtensions'.
+This is called by the ['ClaimsTransformationComponent'](https://github.com/Apollo013/AspNet_MVC5_Security_Claims/blob/master/ClaimsTransformation/Middleware/ClaimsTransformationComponent.cs) class which is hooked up to our OWIN middleware via the extension class ['AppBuilderExtensions'](https://github.com/Apollo013/AspNet_MVC5_Security_Claims/blob/master/ClaimsTransformation/Middleware/AppBuilderExtensions.cs).
 
-The 'HomeController' contains code that will ultimatley print out the transformed collection of claims to the Debug 'Output' window.
+The ['HomeController'](https://github.com/Apollo013/AspNet_MVC5_Security_Claims/blob/master/ClaimsTransformation/Controllers/HomeController.cs) contains code that will ultimatley print out the transformed collection of claims to the Debug 'Output' window.
 
 ---
 
 ###Claims Factory
+
 Although not covered in this repository, we have previously covered creating a claims factory [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer/Identity/Claims/ApplicationClaimsFactory.cs) in the ['AspNet_WebApi2_Security_JWTAuthentication'](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication) project. This is then hooked into our Application User Manager [Here](https://github.com/Apollo013/AspNet_WebApi2_Security_JWTAuthentication/blob/master/WebApi2_Owin_OAuthAccessTokensAndClaims.AuthServer/Identity/Managers/ApplicationUserManager.cs)
 
 ---
