@@ -1,10 +1,18 @@
 # AspNet_MVC5_Security_Claims
 
-(Under Development) A look at various claims features
+---
+
+### Decription
+
+A look at various claims features
 
 ---
 
 Developed with Visual Studio 2015 Community
+
+---
+
+### To Test
 
 To run, launch the app using F5 and register a new user. Navigate to the Home page and then in Visual Studio, observe the output window in debug console.
 
